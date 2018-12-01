@@ -17,3 +17,23 @@ h1 {
 h1 {
     color:white!important;
 }
+
+.my_icon_color {
+    color:red;
+}
+
+.my_margin_bottom {
+    margin-bottom: 30px;
+}
+
+.my_link:hover {
+    text-decoration:none;
+}
+
+.my_link {
+    color:black;
+}
+
+.general_spacing {
+    margin-bottom:100px;
+}
