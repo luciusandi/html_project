@@ -88,3 +88,41 @@ while( step < numbers.length ){
     step = step + 1;
 }
 
+
+var numbers_2 = [1,2,3,4,5,6,7,8,9,10];
+for( var a = 0 ; a < numbers_2.length ; a++ ){
+    console.log(numbers_2[a]);
+}
+
+
+var collections = [];
+
+console.log(collections);
+
+collections.push("Test");
+
+console.log(collections);
+collections.push("Test 2");
+console.log(collections);
+
+
+var myCollections = [];
+function addMe(){
+    var myText = document.getElementById("myText").value;
+    myCollections.push(myText);
+
+    document.getElementById("myResult").innerHTML = "";
+    for( var a = 0 ; a < myCollections.length ; a++ ){
+        var currValue = myCollections[a] + "<br>";
+        var currResultValue = document.getElementById("myResult").innerHTML;
+        document.getElementById("myResult").innerHTML = currResultValue + currValue;
+    }
+
+    //document.getElementById("myResult").innerHTML = "This is Test only";
+}
+
+var test = document.getElementById("myResult").innerHTML;
+console.log(test);
+
+
+

@@ -30,7 +30,7 @@
             <div class="col-sm-12">
                 <div class="form-group">
                     <label for="">Input Quantity:</label>
-                    <input type="number" class="form-control" placeholder="Quantity">
+                    <input id="quantity" type="number" class="form-control" placeholder="Quantity">
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
                             <b>$ 300</b>
                         </div>
                         
-                        <input type="button" class="btn btn-info" value="Add To Cart">
+                        <input type="button" onclick="addToCart(300, 'Mac-Book Pro')" class="btn btn-info" value="Add To Cart">
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                         <div class="form-group">
                             <b>$ 200</b>
                         </div>
-                        <input type="button" class="btn btn-info" value="Add To Cart">
+                        <input type="button" onclick="addToCart(200, 'Lenovo')" class="btn btn-info" value="Add To Cart">
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                             <b>$ 100</b>
                         </div>
 
-                        <input type="button" class="btn btn-info" value="Add To Cart">
+                        <input type="button" onclick="addToCart(100, 'iPhone XS')" class="btn btn-info" value="Add To Cart">
                     </div>
                 </div>
             </div>
@@ -97,19 +97,19 @@
                 </div>
                 <div class="form-group">
                     <label for="">Total payable:</label>
-                    <input type="number" name="" id="" class="form-control" disabled>
+                    <input type="number" name="" id="totalPayable" class="form-control" disabled>
                 </div>
                 <h3>Simple Cashier</h3>
                 <div class="form-group">
                     <label for="">Input amount:</label>
-                    <input type="number" name="" id="" class="form-control">
+                    <input type="number" name="" id="totalUserPay" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="">Change:</label>
-                    <input type="number" name="" id="" class="form-control" disabled>
+                    <input type="number" name="" id="changeTotal" class="form-control" disabled>
                 </div>
                 <div class="form-group">
-                    <input type="button" class="btn btn-info" value="Pay Now">
+                    <input type="button" onclick="payNow()" class="btn btn-info" value="Pay Now">
                 </div>
             </div>
         </div>
